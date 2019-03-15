@@ -6,18 +6,22 @@
 
 ```shell
 yum install docker
+
 systemctl start docker 
+
 systemctl enable docker
+
 docker pull justarchi/archisteamfarm
-docker run --name asf -d --net host -v /usr/nine/asf/config:/app/config docker.io/justarchi/archisteamfarm
+
+docker run --name asf -d --net host \
+-v /usr/nine/asf/config:/app/config \
+docker.io/justarchi/archisteamfarm
 ```
-
-
 
 ## 2.配置文件
 
 ```
-/usr/nine/asf/config
+/usr/nine/asf/config  可以是任何目录，主要为了
 ```
 
 下配置两个文件  IPC.config 和 ASF.json
@@ -52,9 +56,9 @@ ASF.json
     "Headless": true,
     "IdleFarmingPeriod": 3,
     "IPC": true,
-    "IPCPassword": "rubi",
+    "IPCPassword": "1234",
     "LoginLimiterDelay": 15,
-    "SteamOwnerID": 76561198167769743
+    "SteamOwnerID": 你自己的steam64位765开头
 }
 ```
 
