@@ -98,14 +98,14 @@ quit
 
 
 
-#### 命令行式：
+#### 命令行式
 
 ```
 steamcmd +login anonymous +force_install_dir ../csgo_ds +app_update 740 +quit
  
 ```
 
-#### 脚本式：
+#### 脚本式
 
 ```
 vim update_csgo_ds.txt
@@ -117,5 +117,4 @@ vim update_csgo_ds.txt
 
 
 
-[各种服务端的appid]: https://developer.valvesoftware.com/wiki/Dedicated_Servers_List	"."
-
+服务端的appid： https://developer.valvesoftware.com/wiki/Dedicated_Servers_List 
