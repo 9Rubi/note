@@ -19,7 +19,13 @@ app_update 343050 validate
 ## 安装运行库
 
 ```
-Ubuntu/Debian 64-Bit sudo apt-get install lib32gcc1 screen RedHat/CentOS 32-Bit yum -y install glibc libstdc++ screen libcurl RedHat/CentOS 64-Bit yum -y install glibc.i686 libstdc++.i686 screen libcurl.i686
+Ubuntu/Debian 64-Bit
+sudo apt-get install lib32gcc1 screen
+RedHat/CentOS 32-Bit
+yum -y install glibc libstdc++ screen libcurl
+RedHat/CentOS 64-Bit
+yum -y install glibc.i686 libstdc++.i686 screen libcurl.i686
+
 见 https://dontstarve.fandom.com/wiki/Guides/Don%E2%80%99t_Starve_Together_Dedicated_Servers
 ```
 
