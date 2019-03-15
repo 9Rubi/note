@@ -13,7 +13,6 @@
 login anonymous
 force_install_dir ./dst/
 app_update 343050 validate
- 
 ```
 
 ## 安装运行库
@@ -36,7 +35,6 @@ yum -y install glibc.i686 libstdc++.i686 screen libcurl.i686
 ```
 yum install libcurl.i686
 ln -s libcurl.so.4 libcurl-gnutls.so.4
- 
 ```
 
 
@@ -50,7 +48,6 @@ ln -s libcurl.so.4 libcurl-gnutls.so.4
 ```
 cd ~/DST/bin
 ./dontstarve_dedicated_server_nullrenderer
- 
 ```
 
 当看到以下提示
@@ -60,7 +57,6 @@ cd ~/DST/bin
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!! Your Server Will Not Start !!!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
- 
 ```
 
 按Ctrl+C中断，然后完善生成的默认配置
@@ -113,7 +109,6 @@ bind_ip = 127.0.0.1                   ;固定IP
 master_ip = 127.0.0.1                 ;地上世界IP
 master_port = 10889                   ;地上世界端口
 cluster_key = supersecretkey          ;地下世界连接地上世界的钥匙
- 
 ```
 
 #### Master/server.ini
@@ -128,7 +123,6 @@ is_master = true
 [STEAM]
 master_server_port = 27018
 authentication_port = 8768
- 
 ```
 
 #### Caves/server.ini
@@ -153,7 +147,6 @@ return {
 override_enabled = true,
 preset = "DST_CAVE",
 }
- 
 ```
 
 #### Start.sh
@@ -175,7 +168,6 @@ run_shared+=(-shard)
  
 "${run_shared[@]}" Caves  | sed 's/^/Caves:  /'&
 "${run_shared[@]}" Master | sed 's/^/Master: /'
- 
 ```
 
 实际是在
@@ -183,7 +175,6 @@ run_shared+=(-shard)
 ```
 "$persistent_storage_root"/"$conf_dir"/"$cluster_name"
 /usr/rubi/steam/dst/persistent/DoNotStarveTogether/cluster_1
- 
 ```
 
 
@@ -220,7 +211,6 @@ ServerModSetup("462434129")                --restart
 ServerModSetup("1207269058")                      --简易血条DST
 ServerModSetup("1621458706")                      --皮肤法杖
 --ServerModCollectionSetup("id")
- 
 ```
 
 上面是常用的几个Mod。但是dedicated_server_mods_setup.lua只是用于下载Mod，至于Mod是否启用以及配置则是modoverrides.lua 文件的功能。
@@ -297,7 +287,6 @@ return {
 }
  
 要注意，这两个文件的Mod Id是一一对应的。同时，将modoverrides.lua分别复制到Master和Caves文件下。
- 
 ```
 
 
