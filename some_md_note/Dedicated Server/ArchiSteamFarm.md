@@ -21,10 +21,8 @@ docker.io/justarchi/archisteamfarm
 ## 2.配置文件
 
 ```
-/usr/nine/asf/config  可以是任何目录，主要为了
+/usr/nine/asf/config  可以是任何目录，主要为了下配置两个文件  IPC.config 和 ASF.json
 ```
-
-下配置两个文件  IPC.config 和 ASF.json
 
 IPC.config
 
