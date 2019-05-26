@@ -115,7 +115,7 @@ cluster_key = supersecretkey          ;地下世界连接地上世界的钥匙
 
 ```
 [NETWORK]
-server_port = 11000
+server_port = 11000					  
  
 [SHARD]
 is_master = true
@@ -177,7 +177,7 @@ run_shared+=(-shard)
 /usr/rubi/steam/dst/persistent/DoNotStarveTogether/cluster_1
 ```
 
-
+- **端口需要设置为 UDP开放 即可显示Ping**
 
 ## 增加Mod
 
