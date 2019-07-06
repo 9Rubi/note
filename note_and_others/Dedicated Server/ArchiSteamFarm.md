@@ -2,7 +2,7 @@
 
 
 
-##  1.docker安装
+##  1.docker install
 
 ```shell
 yum install docker
@@ -18,10 +18,10 @@ docker run --name asf -d --net host \
 docker.io/justarchi/archisteamfarm
 ```
 
-## 2.配置文件
+## 2.config file
 
 ```
-/usr/nine/asf/config  可以是任何目录，主要为了下配置两个文件  IPC.config 和 ASF.json
+/usr/nine/asf/config  //this diretory is custom.it require IPC.config and ASF.json
 ```
 
 IPC.config
@@ -56,7 +56,7 @@ ASF.json
     "IPC": true,
     "IPCPassword": "1234",
     "LoginLimiterDelay": 15,
-    "SteamOwnerID": 你自己的steam64位765开头
+    "SteamOwnerID": your steam profile id. like  7656....
 }
 ```
 
